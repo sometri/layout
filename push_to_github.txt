@@ -28,3 +28,25 @@ git pull origin main --rebase
 
 # Push local changes to the remote repository
 git push -u origin main
+==========================
+to update files to github: 
+-----
+PS C:\xampp\htdocs\mystudy\web-ant\layout> git init
+Reinitialized existing Git repository in C:/xampp/htdocs/mystudy/web-ant/layout/.git/
+PS C:\xampp\htdocs\mystudy\web-ant\layout> git add .
+PS C:\xampp\htdocs\mystudy\web-ant\layout> git commit -m "Update txt"
+[main b8235b6] Update txt
+ 1 file changed, 17 insertions(+), 36 deletions(-)
+PS C:\xampp\htdocs\mystudy\web-ant\layout> git branch -M main
+PS C:\xampp\htdocs\mystudy\web-ant\layout> git push -u origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 602 bytes | 602.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:sometri/layout.git
+   e5e3b17..b8235b6  main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\xampp\htdocs\mystudy\web-ant\layout> 
